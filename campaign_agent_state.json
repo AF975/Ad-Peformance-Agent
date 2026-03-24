@@ -1,0 +1,264 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-03-24T17:00:00-07:00",
+  "goals": {
+    "quarter": "Q1_FY27",
+    "dateRange": {
+      "start": "2026-02-01",
+      "end": "2026-04-30"
+    },
+    "totalMQLTarget": 18,
+    "channelTargets": {
+      "LINKEDIN": {
+        "total": 9,
+        "byCTA": {
+          "demo_cto": 4,
+          "white_paper_download": 2,
+          "webinar_on_demand_view": 3
+        }
+      },
+      "GOOGLE_ADS": {
+        "total": 9,
+        "byCTA": {
+          "demo_cto": 4,
+          "white_paper_download": 2,
+          "webinar_on_demand_view": 3
+        }
+      }
+    }
+  },
+  "snapshots": [
+    {
+      "weekEnding": "2026-03-24",
+      "reportType": "weekly",
+      "portfolio": {
+        "totalSpend": 5561,
+        "totalLeads": 20,
+        "totalMQLs": 6,
+        "avgCPL": 278
+      },
+      "byChannel": {
+        "LINKEDIN": {
+          "spend": 4576,
+          "leads": 20,
+          "mqls": 6,
+          "cpl": 229
+        },
+        "GOOGLE_ADS": {
+          "spend": 985,
+          "leads": 0,
+          "mqls": 0,
+          "cpl": null
+        }
+      },
+      "mqlProgress": {
+        "LINKEDIN": {
+          "total": 6,
+          "demo_cto": 0,
+          "white_paper_download": 6,
+          "webinar_on_demand_view": 0
+        },
+        "GOOGLE_ADS": {
+          "total": 0,
+          "demo_cto": 0,
+          "white_paper_download": 0,
+          "webinar_on_demand_view": 0
+        }
+      },
+      "topExperiments": [
+        {
+          "name": "Blueprint WP → Enterprise v6",
+          "experimentId": 1793258,
+          "cpl": 50,
+          "leads": 3,
+          "mqls": 1,
+          "mqlRate": 33.3
+        },
+        {
+          "name": "Blueprint WP → Campus Police",
+          "experimentId": 1793299,
+          "cpl": 67,
+          "leads": 1,
+          "mqls": 1,
+          "mqlRate": 100
+        },
+        {
+          "name": "Pulsar WP → Enterprise v6",
+          "experimentId": 1793272,
+          "cpl": 76,
+          "leads": 1,
+          "mqls": 0,
+          "mqlRate": 0
+        }
+      ],
+      "watchList": [
+        {
+          "name": "Google Ads Education (Paused)",
+          "issue": "$985 spend, 0 leads, campaigns paused"
+        },
+        {
+          "name": "Five Tenets → Higher Ed Facilities REC",
+          "experimentId": 1785652,
+          "issue": "$428 spend, 0 MQLs"
+        },
+        {
+          "name": "Five Tenets → SFDC Prospects",
+          "experimentId": 1788223,
+          "issue": "$394 spend, 0 MQLs"
+        }
+      ]
+    }
+  ],
+  "decisionLog": [
+    {
+      "date": "2026-03-23",
+      "action": "Agent initialized",
+      "reason": "Set up automated performance marketing reporting system",
+      "outcome": "done"
+    },
+    {
+      "date": "2026-03-24",
+      "action": "First automated report generated",
+      "reason": "Baseline report with QTD data. Identified critical CTA gaps: no Demo CTO or Webinar On Demand campaigns.",
+      "outcome": "done"
+    },
+    {
+      "date": "2026-03-24",
+      "action": "Google Ads campaigns detected as paused",
+      "reason": "All keywords showing CAMPAIGN_PAUSED status. $985 spent QTD with 0 leads prior to pause.",
+      "outcome": "pending"
+    },
+    {
+      "date": "2026-03-24",
+      "action": "Credit balance DENIED flagged",
+      "reason": "Metadata Pixel AI credits showing 0 remaining, DENIED status. May impact campaign delivery.",
+      "outcome": "pending"
+    }
+  ],
+  "alertHistory": [
+    {
+      "id": "cta-gap-demo-2026-w13",
+      "date": "2026-03-24",
+      "type": "cta_gap",
+      "entity": "demo_cto",
+      "message": "No Demo CTO campaigns running. 8/18 MQL target has zero coverage.",
+      "acknowledged": false
+    },
+    {
+      "id": "cta-gap-webinar-2026-w13",
+      "date": "2026-03-24",
+      "type": "cta_gap",
+      "entity": "webinar_on_demand_view",
+      "message": "No Webinar On Demand campaigns running. 6/18 MQL target has zero coverage.",
+      "acknowledged": false
+    },
+    {
+      "id": "google-paused-2026-w13",
+      "date": "2026-03-24",
+      "type": "channel_paused",
+      "entity": "GOOGLE_ADS",
+      "message": "Google Ads campaigns paused. $985 QTD spend, 0 leads.",
+      "acknowledged": false
+    },
+    {
+      "id": "credit-denied-2026-w13",
+      "date": "2026-03-24",
+      "type": "credit_balance",
+      "entity": "pixel_ai_credits",
+      "message": "Credit balance DENIED, 0 remaining.",
+      "acknowledged": false
+    }
+  ],
+  "experimentTracking": {
+    "knownExperiments": {
+      "1793258": {
+        "name": "Blueprint WP → Enterprise v6",
+        "firstSeen": "2026-03-24",
+        "channel": "LINKEDIN",
+        "status": "Active",
+        "cta": "white_paper_download",
+        "lifetimeSpend": 151,
+        "lifetimeLeads": 3,
+        "lifetimeMQLs": 1,
+        "lastWeekCPL": 50
+      },
+      "1793299": {
+        "name": "Blueprint WP → Campus Police",
+        "firstSeen": "2026-03-24",
+        "channel": "LINKEDIN",
+        "status": "Active",
+        "cta": "white_paper_download",
+        "lifetimeSpend": 67,
+        "lifetimeLeads": 1,
+        "lifetimeMQLs": 1,
+        "lastWeekCPL": 67
+      },
+      "1793272": {
+        "name": "Pulsar WP → Enterprise v6",
+        "firstSeen": "2026-03-24",
+        "channel": "LINKEDIN",
+        "status": "Active",
+        "cta": "white_paper_download",
+        "lifetimeSpend": 76,
+        "lifetimeLeads": 1,
+        "lifetimeMQLs": 0,
+        "lastWeekCPL": 76
+      },
+      "1793310": {
+        "name": "Agentic Ops WP → Higher Ed Facilities",
+        "firstSeen": "2026-03-24",
+        "channel": "LINKEDIN",
+        "status": "Active",
+        "cta": "white_paper_download",
+        "lifetimeSpend": 163,
+        "lifetimeLeads": 1,
+        "lifetimeMQLs": 1,
+        "lastWeekCPL": 163
+      },
+      "1785667": {
+        "name": "Agentic WP → Campus Police",
+        "firstSeen": "2026-03-24",
+        "channel": "LINKEDIN",
+        "status": "Active",
+        "cta": "white_paper_download",
+        "lifetimeSpend": 500,
+        "lifetimeLeads": 3,
+        "lifetimeMQLs": 2,
+        "lastWeekCPL": 167
+      },
+      "1788223": {
+        "name": "Five Tenets → SFDC Prospects Higher Ed",
+        "firstSeen": "2026-03-24",
+        "channel": "LINKEDIN",
+        "status": "Active",
+        "cta": "white_paper_download",
+        "lifetimeSpend": 394,
+        "lifetimeLeads": 2,
+        "lifetimeMQLs": 0,
+        "lastWeekCPL": 197
+      },
+      "1785652": {
+        "name": "Five Tenets → Higher Ed Facilities REC",
+        "firstSeen": "2026-03-24",
+        "channel": "LINKEDIN",
+        "status": "Active",
+        "cta": "white_paper_download",
+        "lifetimeSpend": 428,
+        "lifetimeLeads": 2,
+        "lifetimeMQLs": 0,
+        "lastWeekCPL": 214
+      }
+    }
+  },
+  "config": {
+    "slackChannelId": "C08UY0AF5FA",
+    "slackEstaffChannelId": "G01PC9HRFDK",
+    "repoPath": "/Users/alberto/Documents/Cluade Workspace/Code/Ad-Peformance-Agent",
+    "anomalyThresholds": {
+      "cplSpikePercent": 30,
+      "zeroLeadSpendThreshold": 300,
+      "spendDropPercent": 50,
+      "creditBalanceLowPercent": 20
+    }
+  }
+}
